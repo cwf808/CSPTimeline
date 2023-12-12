@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Date Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <label for="separationDate">Separation / Retirement Date:</label>
+        <input type="date" id="separationDate">
+
+        <div id="dateRangeSection" class="hidden">
+            <p>Date Range:</p>
+            <select id="dateRangeDropdown"></select>
+            <button onclick="calculateDates()">Calculate</button>
+        </div>
+
+        <p id="cspDate"></p>
+        <p id="programStartDate"></p>
+        <p id="programEndDate"></p>
+        <p id="retirementDate"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
