@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cspDateParagraph.textContent = `CSP Eligibility Date: ${cspDate.toDateString()}`;
         programStartDateParagraph.textContent = `Program Start Date: ${selectedRange.toDateString()}`;
         programEndDateParagraph.textContent = `Program End Date: ${programEndDate.toDateString()}`;
-        retirementDateParagraph.textContent = `Separation / Retirement Date: ${selectedDate.toDateString()}`;
+        retirementDateParagraph.textContent = `Separation/Ret Date: ${selectedDate.toDateString()}`;
 
         // Redirect to a new webpage (replace 'newPage.html' with the desired page)
         // window.location.href = 'newPage.html';
