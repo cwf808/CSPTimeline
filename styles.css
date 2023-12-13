@@ -10,3 +10,17 @@ body {
 .hidden {
     display: none;
 }
+
+label {
+    font-size: 18px;
+}
+
+input,
+select,
+button {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+}
