@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         dateRangeDropdown.innerHTML = '';
 
-        for (let i = 0; i <= 30; i++) {
+        for (let i = 0; i <= 60; i++) {
             const optionDate = new Date(startDate);
-            optionDate.setDate(startDate.getDate() + 10);
+            optionDate.setDate(startDate.getDate() + i);
             const optionText = optionDate.toDateString();
             const option = new Option(optionText, optionText);
             dateRangeDropdown.add(option);
