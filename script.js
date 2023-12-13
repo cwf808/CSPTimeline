@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const retirementDateParagraph = document.getElementById('retirementDate');
 
     separationDateInput.addEventListener('change', function () {
-        const selectedDate = new Date(this.value);
+        const selectedDate = new Date(this.value + 'T00:00:00');
         const startDate = new Date(selectedDate);
         startDate.setDate(selectedDate.getDate() - 180);
 
