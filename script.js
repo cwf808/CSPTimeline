@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         for (let i = 0; i <= 30; i++) {
             const optionDate = new Date(startDate);
-            optionDate.setDate(startDate.getDate() + i);
+            optionDate.setDate(startDate.getDate() + 10);
             const optionText = optionDate.toDateString();
             const option = new Option(optionText, optionText);
             dateRangeDropdown.add(option);
