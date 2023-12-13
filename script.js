@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const retirementDateParagraph = document.getElementById('retirementDate');
 
     separationDateInput.addEventListener('change', function () {
+        // Set time component to midnight
         const selectedDate = new Date(this.value + 'T00:00:00');
         const startDate = new Date(selectedDate);
         startDate.setDate(selectedDate.getDate() - 180);
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calculateDates = function () {
-        const selectedDate = new Date(separationDateInput.value);
+        const selectedDate = new Date(separationDateInput.value + 'T00:00:00');
         const selectedRange = new Date(dateRangeDropdown.value);
         const cspDate = new Date(selectedDate);
         const programStartDate = new Date(selectedRange);
